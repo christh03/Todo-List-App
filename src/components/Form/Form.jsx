@@ -9,7 +9,7 @@ export const Form = ({ onAddTodo }) => {
       <input
         className="Form-input"
         type="text"
-        placeholder="Add your new todo"
+        placeholder="Add your new item"
         value={description}
         onChange={onInputChange}
       />
