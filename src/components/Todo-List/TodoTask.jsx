@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
 import {
   faTrashCan,
   faEdit,
@@ -35,4 +36,11 @@ export const TodoTask = ({ todo, onRemoveTodo, onDoneTodo, onEditToggle }) => {
       </div>
     </li>
   );
+};
+
+TodoTask.protoType = {
+  Todo: PropTypes.object.isRequired,
+  onRemoveTodo: PropTypes.func.isRequired,
+  onDoneTodo: PropTypes.func.isRequired,
+  onEditToggle: PropTypes.func.isRequired,
 };
