@@ -1,4 +1,5 @@
 import { Form, Header, TodoList } from './components';
+import PropTypes from 'prop-types';
 import { useTodoApp } from './Hooks/useTodoApp';
 import './TodoApp.scss';
 
@@ -28,4 +29,13 @@ export const TodoApp = () => {
       </section>
     </div>
   );
+};
+
+TodoApp.protoType = {
+  handleAddTodo: PropTypes.func.isRequired,
+  handleRemoveTodo: PropTypes.func.isRequired,
+  handleDoneTodo: PropTypes.func.isRequired,
+  handleEditTodo: PropTypes.func.isRequired,
+  handleEditToggle: PropTypes.func.isRequired,
+  todos: PropTypes.object.isRequired,
 };
