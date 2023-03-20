@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 export const TodoEdit = ({ todo, onEditTodo }) => {
   const [description, setInputValue] = useState(todo.description);
@@ -32,4 +33,9 @@ export const TodoEdit = ({ todo, onEditTodo }) => {
       </button>
     </form>
   );
+};
+
+TodoEdit.propTypes = {
+  todo: PropTypes.object.isRequired,
+  onEditTodo: PropTypes.func.isRequired,
 };
