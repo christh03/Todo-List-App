@@ -1,28 +1,22 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faTrashCan,
   faEdit,
   faCircleCheck,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 
-export const TodoTask = ({
-  todo,
-  onRemoveTodo,
-  onDoneTodo,
-
-  onEditToggle,
-}) => {
+export const TodoTask = ({ todo, onRemoveTodo, onDoneTodo, onEditToggle }) => {
   return (
     <li className="List-li">
       <span
-        className={`List-span ${todo.done ? "List-span--line-through" : ""}`}
+        className={`List-span ${todo.done ? 'List-span--line-through' : ''}`}
       >
         {todo.description}
       </span>
       <div className="List-container-btn">
         <button
           onClick={() => onDoneTodo(todo.id)}
-          className={`List-btn ${todo.done ? "List-btn--done" : ""}`}
+          className={`List-btn ${todo.done ? 'List-btn--done' : ''}`}
         >
           <FontAwesomeIcon icon={faCircleCheck} />
         </button>

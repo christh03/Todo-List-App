@@ -1,5 +1,6 @@
 import { TodoEdit } from './TodoEdit';
 import './TodoList.scss';
+import PropTypes from 'prop-types';
 import { TodoTask } from './TodoTask';
 
 export const TodoList = ({
@@ -32,4 +33,12 @@ export const TodoList = ({
       </ul>
     </div>
   );
+};
+
+TodoList.protoType = {
+  todos: PropTypes.object.isRequired,
+  onRemoveTodo: PropTypes.func.isRequired,
+  onDoneTodo: PropTypes.func.isRequired,
+  onEditTodo: PropTypes.func.isRequired,
+  onEditToggle: PropTypes.func.isRequired,
 };
