@@ -1,4 +1,5 @@
 import { useForm } from '../../Hooks/useForm';
+import PropTypes from 'prop-types';
 import './Form.scss';
 
 export const Form = ({ onAddTodo }) => {
@@ -18,4 +19,8 @@ export const Form = ({ onAddTodo }) => {
       </button>
     </form>
   );
+};
+
+Form.protoType = {
+  onAddTodo: PropTypes.func.isRequired,
 };
