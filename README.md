@@ -6,7 +6,7 @@ This app was made with React.
 
 ### Links
 
-- Solution URL: [https://christhperalta.github.io/Todo-List-App/]()
+- Solution URL: [https://christhperalta.github.io/Todo-List-App/](https://christhperalta.github.io/Todo-List-App/)
 
 ## My process
 
