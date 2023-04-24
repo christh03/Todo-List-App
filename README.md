@@ -22,4 +22,4 @@ This app was made with React.
 
 ## Author
 
-[Christh Peralta]
+Christh Peralta
